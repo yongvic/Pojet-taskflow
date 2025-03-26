@@ -1,0 +1,122 @@
+.pub{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    background-color:  #0077B6;
+    justify-content: center;
+}
+
+
+.boost{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+.phrase_home{
+    color: #E0E0E0;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn_start{
+    background-color: #FFC107;
+    border-radius: 115px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    color:  #000000;
+    padding: 8px 15px;
+    margin-top: 40px;
+    font-family: Poppins;
+    font-size: 16px;
+}
+.btn_start:hover {
+    background-color: #FFA000; 
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+}
+  
+  .fonctionnalites {
+    display: flex;
+    justify-content: center;
+    gap: 250px; 
+  }
+  
+  .mini_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .img {
+    width: 50px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(31%) sepia(99%) saturate(746%) hue-rotate(189deg) brightness(97%) contrast(102%);
+    
+  }
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.explication1, .explication2, .explication3 {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    opacity: 0; 
+    animation: slideIn 1s ease-out forwards;
+    color: #555555; 
+    font-family: Poppins;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.explication1 {
+    animation-delay: 0.3s; 
+}
+
+.explication2 {
+    animation-delay: 0.6s; 
+}
+
+.explication3 {
+    animation-delay: 0.9s;
+}
+
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+}

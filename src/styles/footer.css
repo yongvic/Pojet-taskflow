@@ -1,0 +1,34 @@
+img{
+    width: 30px;
+}
+.imag{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 40px; 
+    filter: invert(100%); /* Transforme le noir en blanc */
+    transition: filter 0.3s ease-in-out;
+    
+}
+.imag:hover {
+    filter: brightness(0) saturate(100%) invert(86%) sepia(32%) saturate(418%) hue-rotate(1deg) brightness(102%) contrast(103%);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: #0077B6;
+    position: relative;
+    top: 70px;
+    color: #E0E0E0;
+    font-weight: 700;
+    font-family: Montserrat;
+    font-size: 14px;
+    
+    
+}
