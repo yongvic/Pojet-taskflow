@@ -1,0 +1,144 @@
+
+h1{
+    text-align: center;
+    margin-top: 70px;
+    align-items: center;
+    margin-left: 40%;
+    font-family: Montserrat;
+    text-align: left; 
+    color: #007bff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin-left: 100px;
+    width: 700px;
+    background-color: #F8F9FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 70px; 
+    font-family: Montserrat;
+  }
+  
+  
+  .ipt_email,
+  .ipt_mot_passe,
+  .ipt_name,
+  .ipt_prenom {
+    height: 40px;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ipt_email:focus,
+  .ipt_mot_passe:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  }
+  
+  .div_insc{
+    align-items: end;
+    text-align: end;
+  }
+  .se_connecter {
+    height: 40px;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+    font-family: Montserrat;
+    font-weight: 550;
+  }
+  
+  .se_connecter:hover {
+    background: #0056b3;
+    transform: scale(1.02); 
+}
+  
+  
+  
+  .oublie:hover {
+    color: #0056b3;
+  }
+  
+  .or {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #666;
+  }
+
+  .div_password{
+    margin-top: 4px;
+  }
+  
+  .btn_google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .btn_google:hover {
+    background: #f0f0f0;
+    border-color: #aaa;
+    transform: scale(1.02);
+  }
+  
+  .icon_google {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .no_compte {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: end;
+  }
+  
+  .p_inscrire {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: Montserrat;
+    font-weight: 550;
+  }
+  
+  .p_inscrire:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    
+  }
+  label{
+    font-weight: 550;
+  }

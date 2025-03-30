@@ -120,3 +120,14 @@
     gap: 60px;
     margin-top: 50px;
 }
+
+.link0{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link0:hover {
+    background-color: #FFA000; 
+    color: #ffffff; 
+    transition: all 0.3s ease-in-out;
+}
