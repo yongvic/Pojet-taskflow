@@ -38,6 +38,10 @@
     font-family: Poppins;
     font-size: 16px;
 }
+
+.link0:hover{
+    color: #ffffff;
+}
 .btn_start:hover {
     background-color: #FFA000; 
     color: #ffffff;
@@ -51,6 +55,9 @@
     gap: 250px; 
   }
   
+  .fonctions{
+    margin-bottom: 70px;
+  }
   .mini_div {
     display: flex;
     flex-direction: column;
@@ -126,8 +133,3 @@
     color: #000000;
 }
 
-.link0:hover {
-    background-color: #FFA000; 
-    color: #ffffff; 
-    transition: all 0.3s ease-in-out;
-}

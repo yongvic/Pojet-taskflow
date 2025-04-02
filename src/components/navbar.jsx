@@ -6,7 +6,7 @@ export default function Navbar() {
   const location = useLocation();
   const hideAuthButtons = ["/login", "/inscription"];
   return (
-    <nav className="navbar">
+    <nav className="navbar" id="navbar" >
       <div className="logo_navbar">
         <img src={logo} alt="logo" />
         <span className="work">TaskBridge</span>

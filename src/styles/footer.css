@@ -24,7 +24,7 @@ img{
     height: 150px;
     background-color: #0077B6;
     position: relative;
-    top: 70px;
+    /* top: 70px; */
     color: #E0E0E0;
     font-weight: 700;
     font-family: Montserrat;

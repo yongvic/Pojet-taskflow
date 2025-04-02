@@ -16,7 +16,7 @@ export default function Login() {
               <input type="password" className="ipt_mot_passe" id="ipt_mot_passe" placeholder="Entrez votre mot de passe" /> <br />
               <a href="" className="oublie">Mot de passe oublier</a> <br />
             </div>
-            <input type="submit" value="Se connecter" className="se_connecter" />
+            <Link to={"/accueil"} ><input type="submit" value="Se connecter" className="se_connecter" /></Link>
             <p className="or">Ou</p>
             <div className="google">
               <button className="btn_google"><img src={google} alt="" className="icon_google" />Continuer avec google</button>
