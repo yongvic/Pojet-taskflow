@@ -1,6 +1,7 @@
 import Barre from "../components/barre.jsx"
 import { Link } from 'react-router-dom'
 import { useEffect } from "react";
+import MesTaches from "../components/mes_taches.jsx"
 
 export default function Accueil() {
     useEffect(() => {
@@ -15,6 +16,7 @@ export default function Accueil() {
     return (
         <>
             <Barre />
+            <MesTaches />
         </>
     )
 

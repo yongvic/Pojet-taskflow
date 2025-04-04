@@ -23,6 +23,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid #ddd;
+    font-size: 13px;
 }
 
 .nav {
@@ -152,6 +153,52 @@ html {
 }
 
 .menu-dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.tasks-dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: -500px;
+    margin-left: 200px;
+    width: 200px;
+    z-index: 10;
+    transition: opacity 0.5s ease-in-out, height 0.3s ease-in-out;
+    border-radius: 5px;
+    display: none;
+}
+
+.tasks-dropdown.show {
+    display: block;
+}
+
+.tasks-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks-dropdown li {
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.tasks-dropdown li:hover {
     background-color: #f0f0f0;
 }
 

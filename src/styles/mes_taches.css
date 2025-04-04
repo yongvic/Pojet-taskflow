@@ -1,0 +1,202 @@
+/* .haut{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -720px;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+    height: 50px;
+}
+.taches{
+    margin-left: 300px;
+    font-size: 13px;
+}
+.uno, .dos, .trese{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.uno{
+    gap: 10px;
+}
+
+.dos{
+    gap: 10px;
+    margin-left: -5px;
+}
+.icon_taches{
+    width: 23px;
+}
+
+.trese{
+    margin-left: 650px;
+    gap: 15px;
+}
+
+.modif{
+    color: rgb(195, 199, 202);
+}
+
+.daily_task{
+    position: relative;
+    top: -650px;
+    margin-left: 100px;
+}
+
+.tit{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.oui, .tab, .calendar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.oui{
+    margin-top: 20px;
+    gap: 30px;
+    border-bottom: 2px solid #ddd;
+    margin-right: 100px;
+}
+
+.tab{
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.calendar{
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.img_tab, .img_calendar{
+    width: 25px;
+}
+.new{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 550px;
+    background-color: #007bff;
+    width: 120px;
+    height: 36px;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 9px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.img_new{
+    filter: invert(1);
+    width: 25px;     
+} */
+.haut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+    height: 50px;
+    padding: 10px 20px;
+}
+
+.taches {
+    margin-left: 300px;
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    margin-right: 6rem;
+}
+
+.uno, .dos, .trese {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.uno {
+    gap: 10px;
+}
+
+.dos {
+    gap: 10px;
+}
+
+.icon_taches {
+    width: 23px;
+}
+
+.trese {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.modif {
+    color: rgb(195, 199, 202);
+}
+
+.daily_task {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.tit {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.oui {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.tab, .calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.img_tab, .img_calendar {
+    width: 25px;
+}
+
+.new {
+    display: flex;
+    flex-direction: row;
+    background-color: #007bff;
+    width: 120px;
+    height: 36px;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    font-weight: 700;
+    font-size: 16px;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.img_new {
+    filter: invert(1);
+    width: 25px;     
+}

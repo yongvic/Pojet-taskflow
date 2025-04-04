@@ -1,6 +1,7 @@
+import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.png";
 import plus_square from "../assets/plus-square.svg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "../styles/barre.css";
 import maison from "../assets/home.svg";
 import user from "../assets/user.svg";
@@ -8,22 +9,31 @@ import group from "../assets/group.svg";
 import plus from "../assets/plus.svg";
 import profil from "../assets/profil.svg";
 import trois_point from "../assets/more-horizontal.svg";
-import React, { useState, useEffect, useRef } from "react";
 
 export default function Barre() {
     const [menuVisible, setMenuVisible] = useState(false);
+    const [tasksVisible, setTasksVisible] = useState(false);
     const menuRef = useRef(null);
+    const tasksRef = useRef(null);
 
     const toggleMenu = (event) => {
-        event.stopPropagation(); // Empêche la fermeture immédiate
+        event.stopPropagation();
         setMenuVisible((prev) => !prev);
     };
 
-    // Ferme le menu si on clique ailleurs
+    const toggleTasks = (event) => {
+        event.stopPropagation();
+        setTasksVisible((prev) => !prev);
+    };
+
+    // Fermer les menus si on clique en dehors
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
                 setMenuVisible(false);
+            }
+            if (tasksRef.current && !tasksRef.current.contains(event.target)) {
+                setTasksVisible(false);
             }
         };
 
@@ -44,7 +54,6 @@ export default function Barre() {
                             src={plus_square}
                             alt="ajouter"
                             className="plus_carre"
-                            id="plus_carre"
                             onClick={toggleMenu}
                         />
                     </div>
@@ -57,7 +66,11 @@ export default function Barre() {
 
                 <div className="deux">
                     <h4 className="h4">Projets</h4>
-                    <div className="un">
+                    <div
+                        className="un"
+                        onClick={toggleTasks}
+                        style={{ cursor: "pointer" }}
+                    >
                         <img src={user} alt="User" />
                         <h4 className="bu">Personnel</h4>
                     </div>
@@ -74,16 +87,38 @@ export default function Barre() {
                 <div className="compte">
                     <img src={profil} alt="profil" className="profil" />
                     <h4 className="name">Young Vic</h4>
-                    <img src={trois_point} alt="plus" className="more" />
+                    <img
+                        src={trois_point}
+                        alt="plus"
+                        className="more"
+                    />
                 </div>
             </div>
 
-            {/* Menu déroulant */}
-            <div ref={menuRef} className={`menu-dropdown ${menuVisible ? "show" : ""}`} onClick={(e) => e.stopPropagation()}>
+            <div ref={menuRef} className={`menu-dropdown ${menuVisible ? "show" : ""}`}>
                 <ul>
                     <div className="div1"><li className="li1">Flux de travail</li></div>
                     <div className="div2"><li className="li2">Credential</li></div>
                     <div className="div3"><li className="li3">Projet</li></div>
+                </ul>
+            </div>
+
+
+            <div
+                ref={tasksRef}
+                className={`tasks-dropdown ${tasksVisible ? "show" : ""}`}
+                style={{
+                    visibility: tasksVisible ? "visible" : "hidden",
+                    opacity: tasksVisible ? 1 : 0,
+                    transition: "opacity 0.5s ease-in-out",
+                    height: tasksVisible ? "auto" : "0",
+                    overflow: "hidden",
+                }}
+            >
+                <ul>
+                    <li>Mes tâches</li>
+                    <li>Tâches du jour</li>
+                    <li>Mes statistiques</li>
                 </ul>
             </div>
         </>

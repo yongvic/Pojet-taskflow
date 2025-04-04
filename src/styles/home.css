@@ -1,3 +1,6 @@
+* {
+    position: relative;
+}
 .pub{
     width: 100%;
     position: relative;

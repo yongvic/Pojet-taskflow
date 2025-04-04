@@ -17,7 +17,7 @@ export default function Inscription() {
 
     return (
         <>
-            <h1>S'inscrire sur TaskBridge</h1>
+            <h1 className="h1">S'inscrire sur TaskBridge</h1>
             <div className="container">
                 <div>
                     <form action="">

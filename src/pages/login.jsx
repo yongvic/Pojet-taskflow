@@ -15,7 +15,7 @@ export default function Login() {
 
   return (
     <>
-      <h1>Se connecter à TaskBridge</h1>
+      <h1 className="h1">Se connecter à TaskBridge</h1>
       <div className="container">
         <div>
           <form action="">
