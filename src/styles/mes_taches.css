@@ -1,104 +1,4 @@
-/* .haut{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: -720px;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 2px solid #ddd;
-    height: 50px;
-}
-.taches{
-    margin-left: 300px;
-    font-size: 13px;
-}
-.uno, .dos, .trese{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.uno{
-    gap: 10px;
-}
-
-.dos{
-    gap: 10px;
-    margin-left: -5px;
-}
-.icon_taches{
-    width: 23px;
-}
-
-.trese{
-    margin-left: 650px;
-    gap: 15px;
-}
-
-.modif{
-    color: rgb(195, 199, 202);
-}
-
-.daily_task{
-    position: relative;
-    top: -650px;
-    margin-left: 100px;
-}
-
-.tit{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.oui, .tab, .calendar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.oui{
-    margin-top: 20px;
-    gap: 30px;
-    border-bottom: 2px solid #ddd;
-    margin-right: 100px;
-}
-
-.tab{
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
-.calendar{
-    gap: 8px;
-    margin-bottom: 10px;
-}
-.img_tab, .img_calendar{
-    width: 25px;
-}
-.new{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-left: 550px;
-    background-color: #007bff;
-    width: 120px;
-    height: 36px;
-    border-radius: 10px;
-    color: white;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 9px;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 10px;
-    gap: 5px;
-}
-
-.img_new{
-    filter: invert(1);
-    width: 25px;     
-} */
 .haut {
     display: flex;
     flex-direction: row;
@@ -199,4 +99,94 @@
 .img_new {
     filter: invert(1);
     width: 25px;     
+}
+
+.process{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    margin-top: 15px;
+}
+
+.process1, .process2, .process3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.point1, .point2, .point3{
+    width: 15px;
+    margin-left: 2px;
+}
+
+.process1{
+    width: 150px;
+    background-color: rgba(246, 92, 92, 0.504);
+    border-radius: 12px;
+    padding: 1px;
+}
+.p, .pp, .ppp{
+    color: rgb(84, 81, 78);
+}
+.process2{
+    width: 150px;
+    background-color: rgba(251, 133, 49, 0.579);
+    border-radius: 12px;
+    padding: 1px;
+}
+.process3{
+    width: 150px;
+    background-color: rgba(140, 248, 77, 0.579);
+    border-radius: 12px;
+    padding: 1px;
+}
+
+.pam1, .pam2, .pam3{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.pam{
+    border: 2px solid #ddd;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 10px;
+}
+.pama{
+    border: 2px solid #ddd;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 10px; 
+}
+.pamar, .pamar1{
+    border: 2px solid #ddd;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 10px;
+}
+.img_1, .img_2, .img_3{
+    width: 25px;
+    margin-left: 15px;
+}
+
+.p2, .p1, .p3{
+    margin-left: 20px; 
+}
+.pam4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    height: 30px;
+    gap: 5px;
+}
+.imomo{
+    width: 20px;
+    margin-left: 10px;
 }
